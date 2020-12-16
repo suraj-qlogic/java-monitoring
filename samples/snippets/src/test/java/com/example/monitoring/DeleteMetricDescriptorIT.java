@@ -23,6 +23,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.UUID;
+
+import com.google.api.gax.rpc.ApiException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -52,7 +54,7 @@ public class DeleteMetricDescriptorIT {
   }
 
   @Before
-  public void setUp() throws IOException {
+  public void setUp() throws ApiException, IOException {
     CreateMetricDescriptor.createMetricDescriptor(PROJECT_ID, METRIC_TYPE);
     bout = new ByteArrayOutputStream();
     out = new PrintStream(bout);
