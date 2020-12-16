@@ -19,10 +19,10 @@ package com.example.monitoring;
 import static com.google.common.truth.Truth.assertThat;
 import static junit.framework.TestCase.assertNotNull;
 
+import com.google.api.gax.rpc.ApiException;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
-import com.google.api.gax.rpc.ApiException;
 import java.util.UUID;
 import org.junit.After;
 import org.junit.Before;
