@@ -22,9 +22,8 @@ import static junit.framework.TestCase.assertNotNull;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
-import java.util.UUID;
-
 import com.google.api.gax.rpc.ApiException;
+import java.util.UUID;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
